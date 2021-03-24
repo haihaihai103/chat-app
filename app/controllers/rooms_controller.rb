@@ -11,6 +11,12 @@ class RoomsController < ApplicationController
       render :new
   end
 
+  def destory
+    room = Room.find(params[:id])
+    room.destory
+    redirect_to root_path
+  end
+  
   private
 
 
