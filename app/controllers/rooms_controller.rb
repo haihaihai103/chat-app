@@ -16,7 +16,7 @@ class RoomsController < ApplicationController
       render :new
     end
   end
-
+  
   def destroy
     room = Room.find(params[:id])
     room.destroy
